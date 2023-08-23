@@ -28,7 +28,7 @@ class MftApi {
     }
   }
 
-  async logIn(username, password, req, res) {
+  async logIn(username, password) {
     try {
       logger.info("Calling login api.")
       
@@ -43,7 +43,6 @@ class MftApi {
       const result = await axios.request(config);
       const cookie = (result.headers['set-cookie'][0])
       const JSESSIONID = util.getStringBetweenStrings(cookie, 'JSESSIONID=', ';' )
-      res.cookie('JSESSIONID', JSESSIONID)
 
       return JSESSIONID;
     } catch (error) {
