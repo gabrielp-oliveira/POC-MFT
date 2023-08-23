@@ -1,0 +1,9 @@
+{
+    "errorLogPath": "../log/error",
+    "infoLogPath": "../log/info",
+    "errorLevel": true,
+    "infoLevel": true,
+    "channel_port":"3003",
+    "debug_mode":false,
+    "api_token": "qa7LtoSceL3H6Abg8wjRqyJ4Qv4WsVSpYVjNNCsFt7A9vfD96dnADsLS8rGnqrtrTKJZVn6pNeg6AEqLBemNeugjTRymZW4yhEwRmKjkWjrDPSYv6JuuSVDwoNzEcQfC"
+}
