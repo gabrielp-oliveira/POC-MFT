@@ -1,0 +1,10 @@
+<!-- <img [src]="exportIcon" title="Export All as Excel" width="16px" height="16px" class="float-right mt-2 pointer"> -->
+
+<p class="storeReports_rowsPerPage float-right mb-0 pointer mr-4">
+  Rows per page
+  <span>
+    <p-dropdown class="storeReports_rowsPerPageDropdown p-inputtext-sm mt-1" [options]="rowsPerPageOptions"
+      [(ngModel)]="rowsPerPage" optionLabel="count" (onChange)="onPageSizeChanged($event.value.count)">
+    </p-dropdown>
+  </span>
+</p>

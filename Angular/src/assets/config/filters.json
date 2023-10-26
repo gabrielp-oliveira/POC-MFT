@@ -1,0 +1,61 @@
+{
+  "adTypes": [
+    {
+      "id": 1,
+      "type": "Ad Special",
+      "value": "Ad Special",
+      "queryValue": "Ad Special OR Price Impact Ad"
+    },
+    {
+      "id": 2,
+      "type": "Best Buy",
+      "value": "Best Buy",
+      "queryValue": "Best Buy"
+    },
+    {
+      "id": 3,
+      "type": "Key Price Cut",
+      "value": "Key Price Cut",
+      "queryValue": "Key Price Cut"
+    },
+    {
+      "id": 4,
+      "type": "Gold Club Extra",
+      "value": "Gold Club Extra",
+      "queryValue": "Gold Club Extra OR Price Impact OR Key Price Cut"
+    },
+    {
+      "id": 5,
+      "type": "Promotion",
+      "value": "Promotion",
+      "queryValue": "Promotion"
+    }
+  ],
+  "VelocityCodes": [
+    {
+      "Id": 1,
+      "Code": "A",
+      "checked": false
+    },
+    {
+      "Id": 2,
+      "Code": "B",
+      "checked": false
+    },
+    {
+      "Id": 3,
+      "Code": "C",
+      "checked": false
+    },
+    {
+      "Id": 4,
+      "Code": "D",
+      "checked": false
+    },
+    {
+      "Id": 5,
+      "Code": "E",
+      "checked": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+
+
+a {
+	transition: all 0.33s;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

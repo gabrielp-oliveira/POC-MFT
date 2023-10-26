@@ -1,0 +1,26 @@
+<div class="row m-0">
+
+  <div class="col-sm-2 p-0">
+
+  </div>
+
+  <div class="col-sm-6 p-0 ml-0">
+    <div class="row m-0">
+      <div class="form-group mb-1 col-sm-12 p-0">
+        <div class="storeReports_SearchFieldGroup input-group">
+
+          <input type="search" class="storeReports_SearchField form-control form-control-sm"
+            placeholder="Report Name" [(ngModel)]="searchValue" (search)="performSearch()">
+
+          <span>
+            <button type="submit" (click)="performSearch()" class="storeReports_searchFieldButton btn btn-danger btn-sm">
+              <img [src]="searchIcon" class="img-fluid" style="width: 17px; height: 17px;" />
+            </button>
+          </span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

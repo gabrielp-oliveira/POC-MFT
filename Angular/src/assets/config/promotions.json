@@ -1,0 +1,12 @@
+{
+  "promotions": [
+    {
+      "promotion_id": "20",
+      "promotion_name": "Web Survey"
+    },
+    {
+      "promotion_id": "10",
+      "promotion_name": "Campaign/Ad Order"
+    }
+  ]
+}

@@ -1,0 +1,767 @@
+.product-search-list.mat-list-base .mat-list-item,
+.mat-list-base .mat-list-option {
+  display: block;
+  height: 25px !important;
+  padding: 0px !important;
+}
+
+.product-search-list.mat-list-base {
+  padding: 0px !important;
+}
+
+.productSearch-content .mat-list-item-content {
+  padding: 0 !important;
+}
+
+.productSeach-Checkbox .mat-checkbox-frame {
+  background: #ededed !important;
+  opacity: 0.2 !important;
+  border: 1px solid #000000 !important;
+  border-radius: 3px !important;
+}
+
+.productSeach-Checkbox-label .mat-checkbox-label {
+  font-size: 12px !important;
+  font-family: "Roboto" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 18px !important;
+  opacity: 0.6 !important;
+  color: #000000 !important;
+}
+
+.productSearch-Tab.mat-tab-label.mat-tab-label-active {
+  // border: 1px solid #199ad6 !important;
+  // color: #199ad6 !important;
+  border-radius: 7px !important;
+  color: black;
+}
+
+.productSearch-Tab.mat-tab-label {
+  height: 35px;
+}
+
+.productSearch-Tab.mat-tab-group.mat-warn .mat-ink-bar,
+.mat-tab-nav-bar.mat-warn .mat-ink-bar {
+  background-color: #ca3639;
+}
+
+.productSearch-Tab.mat-ink-bar {
+  position: absolute;
+  bottom: 0;
+  height: 4px !important;
+  transition: 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+.productSearch-Tab.mat-tab-body-content {
+  background-color: #eaafb00f !important;
+}
+
+.mat-bottom-sheet-container-large {
+  padding: 5px !important;
+  margin-bottom: 50%;
+  min-width: 400px;
+  margin-left: 50%;
+}
+
+.mat-bottom-sheet-container {
+  padding: 5px !important;
+}
+
+.mat-dialog-container {
+  // padding:10px !important;
+}
+
+.pending-carts-table.table-striped tbody tr:nth-of-type(odd) {
+  background: #f2f2f2 !important;
+  border-radius: 4px !important;
+}
+
+.pending-carts-table.table td,
+.table th {
+  padding: 6px;
+  vertical-align: middle;
+  border-top: 0px !important;
+}
+
+//   .filter-option.mat-checkbox-indeterminate.mat-primary .mat-checkbox-background, .mat-checkbox-checked.mat-primary .mat-checkbox-background {
+//     background-color: #ca3639 !important;
+//   }
+
+//   .filter-option.mat-checkbox-inner-container{
+//     height:14px;
+//     width:14px;
+//   }
+//   .filter-option .mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+//     background-color: #ca3639 !important;
+//   }
+//   .tktHistory-Checkbox.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+//     background-color: #ca3639 !important;
+//   }
+
+.custom-orders-alerts {
+  .alert {
+    position: relative;
+    margin-bottom: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 14px;
+  }
+
+  .close {
+    float: right;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .alert-dismissible .close {
+    padding: 0.5rem 0.75rem !important;
+  }
+}
+
+/* Custom Alerts */
+.alert-dialog-msg {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #505050;
+}
+
+.alert-dialog-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #d92337;
+}
+
+.alert-dialog-btn:hover {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #d92337;
+  background-color: #f8d1d5;
+  border-color: #f8d1d5;
+}
+
+.alert-dialog-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 133.69%;
+  text-align: center;
+  color: #000000;
+  opacity: 0.95;
+}
+
+.dialog .mat-dialog-container {
+  padding: 0px !important;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+// prime ng styles
+
+.buyerDropdown .p-dropdown {
+  width: 100% !important;
+  font-size: 10px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+.promotionsDropdown .p-dropdown {
+  width: 98% !important;
+  font-size: 10px;
+  border-radius: 50px;
+  border: 1px solid #ced4da;
+}
+
+.promotionsDropdown .p-dropdown .p:hover {
+  border: 1px solid #ced4da;
+  outline: 0;
+  box-shadow: none;
+}
+
+.promotionsDropdown .p-dropdown:not(.p-disabled).p-focus,
+.promotionsDropdown .p-dropdown:not(.p-disabled):hover {
+  border: 1px solid #ced4da;
+  outline: 0;
+  box-shadow: none;
+}
+
+.promotionsDropdown .p-dropdown .p-inputtext {
+  font-size: 12px;
+  font-family: Roboto;
+  padding: 5px;
+  color: black;
+}
+
+.promotionsDropdown .p-dropdown .p-inputtext-sm .p-inputtext {
+  font-size: 0.875rem;
+  color: black;
+  padding: 0.39rem 0.4375rem;
+}
+
+.promotionsDropdown .p-dropdown .pi {
+  font-size: 0.7rem;
+}
+
+.promotionsDropdown .p-dropdown-panel .p-dropdown-items {
+  color: #000;
+  background: #ffffff;
+  font-size: 12px;
+  font-family: Poppins;
+  padding: 0px;
+}
+
+.promotionsDropdown.p-dropdown-items-wrapper {
+  max-height: 200px;
+  border-radius: 8px;
+  padding: 0px !important;
+  z-index: 2000 !important;
+  right: 0px !important;
+  // width: 15%;
+}
+
+.promotionsDropdown .p-dropdown-panel.p-component {
+  max-width: 80% !important;
+  right: 0px !important;
+}
+
+.promotionsDropdown .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+  color: #000;
+  background: #f2f2f2;
+  text-overflow: ellipsis !important;
+}
+
+.promotionsDropdown .p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+  text-overflow: ellipsis !important;
+}
+
+//
+.buyersDropdown .p-dropdown {
+  width: 100% !important;
+  font-size: 10px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+.buyersDropdown .p-dropdown .p:hover {
+  border: 1px solid #ced4da;
+  outline: 0;
+  box-shadow: none;
+}
+
+.buyersDropdown .p-dropdown:not(.p-disabled).p-focus,
+.buyersDropdown .p-dropdown:not(.p-disabled):hover {
+  border: 1px solid #ced4da;
+  outline: 0;
+  box-shadow: none;
+}
+
+.buyersDropdown .p-dropdown .p-inputtext {
+  font-size: 12px;
+  font-family: Roboto;
+  padding: 0.57rem 0.4375rem;
+  color: black;
+}
+
+.buyersDropdown .p-dropdown .p-inputtext-sm .p-inputtext {
+  font-size: 0.875rem;
+  color: black;
+  padding: 0.39rem 0.4375rem;
+}
+
+.buyersDropdown .p-dropdown .pi {
+  font-size: 0.7rem;
+}
+
+.buyersDropdown .p-dropdown-panel .p-dropdown-items {
+  color: #000;
+  background: #ffffff;
+  font-size: 12px;
+  font-family: Poppins;
+  padding: 0px;
+}
+
+.buyersDropdown.p-dropdown-items-wrapper {
+  max-height: 200px;
+  border-radius: 8px;
+  padding: 0px !important;
+  z-index: 2000 !important;
+  right: 0px !important;
+  // width: 15%;
+}
+
+.buyersDropdown .p-dropdown-panel.p-component {
+  max-width: 80% !important;
+  right: 0px !important;
+}
+
+.buyersDropdown .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+  color: #000;
+  background: #f2f2f2;
+  text-overflow: ellipsis !important;
+}
+
+.buyersDropdown .p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+  text-overflow: ellipsis !important;
+}
+
+/* Store Filters List */
+.store-filter-option.mat-list-base .mat-list-item,
+.mat-list-base .mat-list-option {
+  height: 25px !important;
+}
+
+.store-filter-option.mat-list-base .mat-list-item .mat-list-item-content,
+.mat-list-base .mat-list-option .mat-list-item-content {
+  padding: 0px !important;
+}
+
+.filter-access-option.mat-list-base .mat-list-item,
+.mat-list-base .mat-list-option {
+  height: 25px !important;
+}
+
+.store-filter-option .filter-headline,
+.filter-option:hover {
+  color: #d92337 !important;
+}
+
+.filter-access-checkbox {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.filter-checkbox .mat-checkbox-frame {
+  background-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  border: 1px solid #cccccc;
+}
+
+.filter-checkbox.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  background-color: #fff !important;
+}
+
+.filter-checkbox .mat-checkbox-checkmark-path {
+  stroke: #000000 !important;
+}
+
+.filter-headline {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.filter-option {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.orderDeliveryDateCalender .p-button {
+  color: #ffffff !important;
+  background: #ca3639 !important;
+  border: 1px solid #ca3639 !important;
+}
+
+.orderDeliveryDateCalender .p-calendar-w-btn .p-inputtext {
+  border-bottom-left-radius: 8px !important;
+  border-top-left-radius: 8px !important;
+  cursor: pointer;
+}
+
+.orderDeliveryDateCalender .p-calendar {
+  height: 30px !important;
+  width: 96% !important;
+}
+
+.orderDeliveryDateCalender .p-button.p-button-icon-only {
+  width: 2.157rem;
+  padding: 0.5rem 0;
+}
+
+.orderDeliveryDateCalender .p-calendar-w-btn .p-inputtext:focus {
+  border: 1px solid #ced4da !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.orderDeliveryDateCalender .p-inputtext:enabled:hover {
+  border-color: #ced4da;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.orderDeliveryDateCalender .p-datepicker {
+  padding: 0.2rem !important;
+  border: 0.5px solid #ca3639 !important;
+  border-radius: 10px !important;
+}
+
+.orderDeliveryDateCalender .p-datepicker .p-component .p-datepicker-touch-ui {
+  min-width: 30% !important;
+  height: 65% !important;
+  left: 20% !important;
+}
+
+.orderDeliveryDateCalender .p-datepicker table td>span {
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+}
+
+.orderDeliveryDateCalender .p-datepicker table td {
+  padding: 0.3rem !important;
+}
+
+.orderDeliveryDateCalender .p-calendar .p-datepicker-touch-ui,
+.p-datepicker-touch-ui {
+  // left: 15% !important;
+  // min-width: 25vw !important;
+  // position: fixed !important;
+  // top: 50% !important;
+  left: 10% !important;
+  min-width: 18vw !important;
+  position: fixed !important;
+  top: 58% !important;
+}
+
+.orderDeliveryDateCalender .p-datepicker .p-datepicker-header {
+  padding: 0.3rem !important;
+  color: #495057;
+}
+
+.orderDeliveryDateCalender .p-inputtext {
+  font-family: Roboto;
+  font-size: 12px !important;
+  color: #000 !important;
+  background: #ffffff !important;
+  padding: 0.5rem 0.5rem !important;
+  border: 1px solid #ced4da !important;
+}
+
+// .only-icon {
+//     .ui-inputtext{
+//       display: none;
+//     }
+//     button.ui-datepicker-trigger.ui-calendar-button  {
+//       border-radius: 4px !important;
+//     }
+//    }
+
+.only-icon.p-calendar-w-btn .p-inputtext {
+  display: none !important;
+}
+
+.only-icon .p-button {
+  color: #fff !important;
+  background: none !important;
+  border: 0px solid #2196f3 !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1.2rem !important;
+}
+
+.only-icon .p-button:focus {
+  color: #fff !important;
+  background: none !important;
+  border: 0px solid #2196f3 !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1.2rem !important;
+  box-shadow: none !important;
+  outline: 0;
+}
+
+
+
+.grid-box--qty [class*="icon"] {
+  color: #d92337 !important;
+  font-size: 16px !important;
+  display: inline-block;
+  width: 10px !important;
+  top: 3px !important;
+  margin-left: -5px !important;
+}
+
+.only-icon .p-calendar {
+  height: 30px !important;
+  width: 96% !important;
+}
+
+.p-datepicker table td.p-datepicker-today>span {
+  background: #d92337;
+  color: #fff;
+}
+
+.deliveredDateCard .box--qty [class*="icon"] {
+  color: #fff !important;
+}
+
+.only-icon .p-datepicker .p-component .p-datepicker-touch-ui {
+  min-width: 30% !important;
+  height: 65% !important;
+  left: 20% !important;
+}
+
+.only-icon .p-datepicker table td>span {
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+}
+
+.only-icon .p-datepicker table td {
+  padding: 0.3rem !important;
+}
+
+.only-icon .p-calendar .p-datepicker-touch-ui,
+.p-datepicker-touch-ui {
+  left: 60% !important;
+  min-width: 25vw !important;
+  position: fixed !important;
+  top: 55% !important;
+}
+
+.only-icon .p-datepicker .p-datepicker-header {
+  padding: 0.3rem !important;
+  color: #495057;
+}
+
+.p-datepicker table td>span.p-highlight {
+  color: #fff !important;
+  background: #d92337 !important;
+}
+
+.p-dialog {
+  max-width: 75% !important;
+  width: 50% !important;
+}
+
+.p-calendar {
+  // z-index: 1005 !important;
+  height: 65% !important;
+}
+
+.p-datepicker table td.p-datepicker-today>span {
+  // background: #ffffff !important;
+  // color: #bfc7cf !important;
+  background: transparent !important;
+  color: #495057 !important;
+}
+
+.p-datepicker table td.p-datepicker-today>span.p-highlight {
+  color: #fff !important;
+  background: #d92337 !important;
+}
+
+.categoryDropdown .p-dropdown-items-wrapper {
+  max-height: 200px;
+  border-radius: 8px;
+  padding: 0px;
+  z-index: 2000 !important;
+}
+
+.p-dropdown-panel.p-component {
+  right: 0px !important;
+}
+
+.gridrequesteddatecalender .p-button {
+  color: #ffffff !important;
+  background: #ca3639 !important;
+  border: 1px solid #fff !important;
+}
+
+.gridrequesteddatecalendergrid .p-button {
+  color: #ca3639 !important;
+  background: none !important;
+  border: 0px solid #ca3639 !important;
+}
+
+.gridrequesteddatecalender .p-calendar-w-btn .p-inputtext {
+  border-bottom-left-radius: 8px !important;
+  border-top-left-radius: 8px !important;
+  cursor: pointer;
+}
+
+.gridrequesteddatecalender .p-calendar {
+  height: 30px !important;
+  width: 96% !important;
+}
+
+.gridrequesteddatecalender .p-button.p-button-icon-only {
+  width: 2.157rem;
+  padding: 0.5rem 0;
+}
+
+.gridrequesteddatecalender .p-calendar-w-btn .p-inputtext:focus {
+  border: 1px solid #ced4da !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.gridrequesteddatecalender .p-inputtext:enabled:hover {
+  border-color: #ced4da;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.gridrequesteddatecalender .p-datepicker .p-component .p-datepicker-touch-ui {
+  min-width: 30% !important;
+  height: 65% !important;
+  left: 20% !important;
+}
+
+.gridrequesteddatecalender .p-datepicker table td>span {
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+}
+
+.gridrequesteddatecalender .p-datepicker table td {
+  padding: 0.3rem !important;
+}
+
+.gridrequesteddatecalender .p-calendar .p-datepicker-touch-ui,
+.p-datepicker-touch-ui {
+  left: 25% !important;
+  min-width: 14vw !important;
+  position: fixed !important;
+  // top: 70% !important;
+}
+
+.gridrequesteddatecalender .p-datepicker .p-datepicker-header {
+  padding: 0.3rem !important;
+  color: #495057;
+}
+
+.gridrequesteddatecalender .p-inputtext {
+  font-family: Roboto;
+  font-size: 12px !important;
+  color: #000 !important;
+  background: #ffffff !important;
+  padding: 0.5rem 0.5rem !important;
+  border: 1px solid #ced4da !important;
+}
+
+.orderLineLevelDate .p-datepicker {
+  padding: 0.2rem !important;
+  border: 0.5px solid #ca3639 !important;
+  border-radius: 10px !important;
+}
+
+/* date calender styles */
+.storeReports_dateRangeCalendar .p-button {
+  color: #ca3639 !important;
+  background: none !important;
+  border-top: 1px solid #ced4da !important;
+  border-bottom: 1px solid #ced4da !important;
+  border-left: 0px solid #ced4da !important;
+  border-right: 1px solid #ced4da !important;
+}
+
+.storeReports_dateRangeCalendar .p-calendar-w-btn .p-inputtext {
+  border-bottom-left-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  font-family: Poppins;
+  font-size: 11px !important;
+  color: #8a8a8a;
+}
+
+.storeReports_dateRangeCalendar .p-calendar {
+  height: 30px !important;
+  width: 96% !important;
+  padding-left: 0px !important;
+}
+
+.storeReports_dateRangeCalendar .p-button.p-button-icon-only {
+  width: 2.157rem;
+  padding: 0.5rem 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  //border:0px !important;
+}
+
+.storeReports_dateRangeCalendar button:focus:not(:focus-visible) {
+  // border:0px !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+.storeReports_dateRangeCalendar .p-calendar-w-btn .p-inputtext:focus {
+  border-top: 1px solid #ced4da !important;
+  border-bottom: 1px solid #ced4da !important;
+  border-left: 1px solid #ced4da !important;
+  border-right: 0px solid #ced4da !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+
+}
+
+.storeReports_dateRangeCalendar .p-inputtext:enabled:hover {
+  border-color: #ced4da;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.storeReports_dateRangeCalendar .p-datepicker .p-component .p-datepicker-touch-ui {
+  min-width: 30% !important;
+  height: 65% !important;
+  left: 20% !important;
+}
+
+.storeReports_dateRangeCalendar .p-datepicker table td>span {
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+}
+
+.storeReports_dateRangeCalendar .p-datepicker table td {
+  padding: 0.3rem !important;
+}
+
+.storeReports_dateRangeCalendar .p-calendar .p-datepicker-touch-ui,
+.p-datepicker-touch-ui {
+  left: 15% !important;
+  min-width: 25vw !important;
+  position: fixed !important;
+  top: 50% !important;
+}
+
+.storeReports_dateRangeCalendar .p-datepicker .p-datepicker-header {
+  padding: 0.3rem !important;
+  color: #495057;
+}
+
+.storeReports_dateRangeCalendar .p-inputtext {
+  font-family: Poppins;
+  font-size: 11px !important;
+  color: #8a8a8a;
+  background: #ffffff !important;
+  padding: 0.5rem 0.5rem !important;
+  border-top: 1px solid #ced4da !important;
+  border-bottom: 1px solid #ced4da !important;
+  border-left: 1px solid #ced4da !important;
+  border-right: 0px solid #ced4da !important;
+}
+

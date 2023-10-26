@@ -1,0 +1,93 @@
+:host ::ng-deep .p-multiselect {
+  width: 100% !important;
+  font-size: 10px;
+  border-radius: 8px !important;
+  border: 1px solid #ced4da !important;
+}
+
+
+
+:host ::ng-deep .multiselect-custom {
+  .p-multiselect-label {
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+  }
+
+  .p-multiselect-trigger-icon {
+    font-size: 0.7rem !important;
+  }
+
+  .p-multiselect-header {
+    // padding: .3rem .3rem !important;
+    padding: 10px 5px 8px 12px!important;
+
+  }
+
+  .cdk-virtual-scroll-content-wrapper {
+    padding: 0rem !important;
+  }
+
+  .p-inputtext {
+    padding: .2rem !important;
+    font-size: 12px;
+  }
+
+  .p-multiselect-item {
+    font-size: 12px !important;
+    color: #000000 !important;
+  
+    font-weight: 500!important;
+    padding: 2px 0px 2px 12px;
+    text-align: start;
+    text-wrap: wrap;
+    height: 40px!important ;
+    line-height: 16px !important;
+  }
+
+  .p-checkbox {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: white !important;
+    opacity: 0.9;
+  }
+
+  .p-checkbox-box .p-checkbox-icon {
+    color: white !important;
+  }
+
+  .p-highlight {
+    background: transparent !important;
+  }
+
+  .p-checkbox .p-checkbox-box.p-highlight {
+    border-color: #ce7628 !important;
+    background: #e68835 !important;
+  }
+
+  .storeReports_multiSelectSelectionLabel {
+    padding: 1px 8px 1px 5px !important;
+    border-radius: 3px;
+    display: inline-flex;
+    margin-right: .5rem;
+    background-color: #ededed;
+    font-size: 12px;
+    font-family: Poppins !important;
+
+    img.flag {
+      width: 17px;
+    }
+  }
+
+  .storeReports_multiSelectPlaceHolder {
+    // padding: 5px 8px 5px 5px !important;
+    color: #8a8a8a !important;
+    background: #fff !important;
+    font-size: 12px !important;
+    font-family: Poppins !important;
+  }
+
+
+}

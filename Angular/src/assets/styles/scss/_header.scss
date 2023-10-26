@@ -1,0 +1,105 @@
+
+.site-header {
+    // background: url(../images/header-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.site-header--inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 142px;
+}
+
+.main-nav {
+    @extend .shadow;
+    position: relative;
+    bottom: -28px;
+}
+
+.page-header {
+    @extend .shadow;
+    // padding: 0px 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.page-header--col {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom:15px;
+}
+
+.page-header--col--viewOrderAccess {
+    padding: 10px 7px 7px 16px !important;
+}
+
+.col--steps {
+    flex: 1;
+    text-align: center;
+}
+
+.page-subtitle {
+    color: $gray;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.page-title {
+    font-family: $font-alt;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    white-space: nowrap;
+
+}
+
+.cart-resume {
+    display: flex;
+    align-items: center;
+}
+
+.cart-resume--actions {
+    padding-left: 32px;
+}
+
+.site-header--actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header--brand {
+    flex: 0 0 264px;
+    text-align: center;
+
+    img {
+        width: 158px;
+        margin: auto;
+    }
+}
+
+.site-header--account {
+    text-align: right;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .js-custom--select,
+    .selectric-wrapper {
+        margin-right: 14px;
+    }
+}
+
+.site-header--search {
+    flex: 0 1 555px;
+}

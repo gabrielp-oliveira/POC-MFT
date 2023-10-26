@@ -1,0 +1,30 @@
+<div class="col-sm-12 card storeReports_filterCard pr-0">
+
+  <!-- Title -->
+  <div class="col-sm-12 pl-0 pr-0 pt-2">
+
+    <span
+      [ngClass]="isClearFilterDisabled ? 'storeReports_clearFilterButtonDisabled' : 'storeReports_clearFilterButtonEnabled'"
+      class="storeReports_filterTextClear pl-1 mb-0 pr-2" (click)="clearAllFilters()">Clear
+    </span>
+
+  </div>
+
+  <!-- Store Selector -->
+  <div class="storeReports_filterHeight">
+
+    <!-- Store-Filter -->
+    <app-store-filter></app-store-filter>
+
+    <!-- CompanyCodes-Filter -->
+    <app-company-code-filter></app-company-code-filter>
+
+    <!-- ReportName-Filter -->
+    <app-report-name-filter></app-report-name-filter>
+
+    <!-- DateRange-filter -->
+    <app-date-range-filter></app-date-range-filter>
+
+  </div>
+
+</div>

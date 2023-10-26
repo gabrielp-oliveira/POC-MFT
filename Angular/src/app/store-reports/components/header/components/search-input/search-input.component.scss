@@ -1,0 +1,40 @@
+.storeReports_SearchFieldGroup {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-right: 0px !important;
+  border: 1px solid #ced4da;
+  padding-left: 10px;
+  line-height: 10px;
+  height: 30px;
+}
+
+.storeReports_SearchField {
+  border-radius: 5px 0px 0px 5px;
+  width: 82%;
+  border: 0px;
+  padding-left: 10px;
+  height: 28px;
+  font-family: Poppins;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+
+
+.storeReports_SearchField::placeholder {
+  font-family: Poppins;
+  font-size: 11px;
+  color: #8a8a8a;
+  padding-top: 5px;
+}
+
+.storeReports_searchFieldButton {
+  border-radius: 50px;
+  border-radius: 50px;
+  line-height: 1.5 !important;
+  padding: 3px 15px;
+  border-color: #ce7628 !important;
+  background-color: #e68835 !important;
+}

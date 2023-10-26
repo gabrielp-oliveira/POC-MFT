@@ -1,0 +1,36 @@
+<div class="col-sm-12 p-0 storeReports_headerRow">
+  <div class="row m-0 p-2 pt-3 pb-3 flex-wrap justify-content-around">
+
+    <!-- title-section -->
+    <div class="col-sm-2 pl-2 pt-0 mt-auto mb-auto">
+      <div class="row pl-2">
+        <h6 class="mb-0 pl-2 pr-1 storeReports_headerTitle">MFT
+          <a [href]="pdfURL" [target]="pdfTarget"
+            *ngIf="pdfURL != undefined; else nopdfurl" class="helperText pl-0">
+            <img [src]="helpImg" style="width: 20px;  height: 20px; cursor: pointer;">
+          </a>
+          <ng-template #nopdfurl>
+            <a (click)="displayPageId()" class="helperText pl-0">
+              <img [src]="helpImg" style="width: 20px;  height: 20px; cursor: pointer;">
+              <span *ngIf="showPageIdMsg" class="helperText">{{pageIdMsg}}</span>
+            </a>
+          </ng-template>
+        </h6>
+      </div>
+    </div>
+
+    <!-- search-input-section -->
+    <div class="col-sm-6 p-0 pt-0 mt-auto mb-auto" style="min-width: 562px">
+      <app-search-input></app-search-input>
+    </div>
+
+    <div class="col-sm-2 p-0 pt-0 mt-auto mb-auto">
+      <app-file-upload></app-file-upload>
+    </div>
+    <!-- page-config-section -->
+    <div class="col-sm-2 p-0 pt-0 mt-auto mb-auto pr-3" style="max-width: 60%;">
+      <app-page-config></app-page-config>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,60 @@
+{
+  "pageId": "SR01",
+  "gsPageId": "GSSR01",
+
+  "getCMSData": {
+    "serverHost": "https://qacsapim.cswg.com",
+    "contextRoot": "/cp/cms/1.0",
+    "endPoint": "/content/getCMSData"
+  },
+  "getUserStores": {
+    "serverHost": "https://qacsapim.cswg.com",
+    "contextRoot": "/cp/security/1.0",
+    "endPoint": "/store/getUserStores"
+  },
+  "getAllActiveStores": {
+    "serverHost": "https://qacsapim.cswg.com",
+    "contextRoot": "/cp/security/1.0/",
+    "endPoint": "store/getStores"
+  },
+  "getCompanyCodes": {
+    "serverHost": "https://qacsapim.cswg.com",
+    "contextRoot": "/cp/sharedModule/1.0",
+    "endPoint": "/getCompanyCode"
+  },
+  "checkSubRole": {
+    "serverHost": "https://qacsapim.cswg.com",
+    "contextRoot": "/cp/security/1.0",
+    "endPoint": "/user/checkSubRole"
+  },
+  "getAssignedCompaniesByStore": {
+    "serverHost": "https://qacsapim.cswg.com",
+    "contextRoot": "/cp/security/1.0",
+    "endPoint": "/user/getCompanyCodesByUser"
+  },
+  "getReportNames": {
+    "serverHost": "https://qacsapim.cswg.com",
+    "contextRoot": "/cp/searchReport/1.0",
+    "endPoint": "/store/getReportNames"
+  },
+  "getMftList": {
+    "serverHost": "http://localhost:3003/mft/list",
+    "contextRoot": "",
+    "endPoint": ""
+  },
+  "getFormatList": {
+    "serverHost": "http://localhost:3003/mft/getFormatOptions",
+    "contextRoot": "",
+    "endPoint": ""
+  },
+  "uploadFiles": {
+    "serverHost": "http://localhost:3003/mft/uploadFiles",
+    "contextRoot": "",
+    "endPoint": ""
+  },
+  "downloadFile": {
+    "serverHost": "https://qacsapim.cswg.com",
+    "contextRoot": "/cp/fin/doc/1.0",
+    "endPoint": "/gs/getFileByReportId"
+  }
+}

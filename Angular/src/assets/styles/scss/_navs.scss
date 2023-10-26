@@ -1,0 +1,117 @@
+
+.main-nav {
+	.menu {
+		display: flex;
+		padding-left: 18px;
+		font-family: $font-alt;
+		font-size: 16px;
+
+		> li {
+			padding: 8px;
+			position: relative;
+			z-index: 10;
+
+			> a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 40px;
+				text-decoration: none;
+				color: $gray-500;
+				padding: 2px 10px 2px 34px;
+				position: relative;
+				border-radius: 8px;
+
+				&:hover {
+					background: $hover;
+					color: $color;
+				}
+
+				&.active {
+					background: $hover;
+					color: $color;
+				}
+			}
+		}
+	}
+
+	.sub-menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		min-width: 226px;
+		width: 100%;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		@extend .shadow;
+
+		visibility: hidden; /* hides sub-menu */
+		opacity: 0;
+		transform: translateY(-2em);
+		z-index: -1;
+		transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+
+		a {
+			color: black;
+			font: 16px;
+			display: block;
+			text-align: left;
+			padding: 10px 16px;
+			text-decoration: none;
+
+			&:hover {
+				color: $color;
+			}
+
+			&.active {
+				color: $color;
+			}
+		}
+	}
+}
+
+.menu--icon {
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 8px;
+	transform: translateY(-50%);
+}
+
+.has-child {
+	.menu--label {
+		&::after {
+			@extend .font-icon;
+			content: "\e907";
+			margin-left: 8px;
+			bottom: -2px;
+			position: relative;
+			display: inline-block;
+			font-size: 14px;
+			transition: all 0.3s;
+		}
+	}
+
+	&:focus,
+	&:focus-within,
+	&:hover {
+		> a {
+			background: $hover;
+			color: $color !important;
+		}
+
+		.menu--label {
+			&::after {
+				transform: scale(-1, -1);
+			}
+		}
+
+		.sub-menu {
+			visibility: visible; /* shows sub-menu */
+			opacity: 1;
+			z-index: 1;
+			transform: translateY(0%);
+			transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+		}
+	}
+}

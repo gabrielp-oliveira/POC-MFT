@@ -1,0 +1,58 @@
+.storeReports_filterText {
+  font-family: 'Poppins' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px !important;
+  line-height: 20px;
+  color: #000000;
+}
+
+.storeReports_filterHeight {
+  height: calc(100vh - 320px) !important;
+  overflow: auto;
+  padding-bottom: 15px;
+}
+
+// .storeReports_filterHeight:hover {
+//   overflow: auto;
+// }
+
+.storeReports_filterCard {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding-left: 8px;
+}
+
+.storeReports_filterTextClear {
+  font-family: Roboto;
+  float: right;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+}
+
+div.storeReports_filterTextLong {
+  white-space: nowrap;
+  width: 50px;
+  overflow: hidden;
+  text-overflow: "----";
+  border: 1px solid #000000;
+}
+
+span.storeReports_filterTextLong {
+  word-break: break-all;
+}
+
+
+.storeReports_clearFilterButtonDisabled {
+  color: #e68835;
+  opacity: 0.5;
+
+}
+
+.storeReports_clearFilterButtonEnabled {
+  color: #e68835 !important;
+  cursor: pointer;
+}

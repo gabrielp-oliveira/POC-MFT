@@ -1,0 +1,59 @@
+
+.label--gray {
+	color: $gray-400;
+}
+
+.label--gray-dark {
+	color: $gray;
+}
+
+.label--color {
+	color: $color;
+}
+
+.label--w-500 {
+	font-weight: 500;
+}
+
+.label--w-700 {
+	font-weight: 700;
+}
+
+.label--price-large {
+	font-size: 22px;
+}
+
+.price--older {
+	font-size: 14px;
+	color: rgba(black,0.5);
+	text-decoration: line-through;
+}
+
+
+.text-12 {
+	font-size: 12px;
+}
+
+.text-14 {
+	font-size: 14px;
+}
+
+.text-16 {
+	font-size: 16px;
+}
+
+.text-18 {
+	font-size: 18px;
+}
+
+.text-20 {
+	font-size: 20px;
+}
+
+.text-22 {
+	font-size: 22px;
+}
+
+.text-24 {
+	font-size: 24px;
+}

@@ -1,0 +1,23 @@
+<div class="">
+
+  <div class="py-1 pl-0 pr-0 m-0">
+    <div class="col-sm-12 storeReports_gridWrapper p-0" style="height: calc(100vh - 294px); overflow: hidden;">
+      <div class="col-12 pl-2 pr-2 mt-0">
+
+        <ag-grid-angular style="width: 100%; height:calc(100vh - 294px);" class="ag-theme-balham"
+          [modules]="this.agGridAllModules" [frameworkComponents]="this.frameworkComponents"
+          [gridOptions]="this.gridOptions" (gridReady)="onGridReady($event)" [defaultColDef]="this.defaultColDef"
+          [columnDefs]="this.gridColumnDefs" [rowSelection]="'multiple'" 
+          [overlayNoRowsTemplate]="this.overlayNoDataTemplate" [suppressContextMenu]="true" [animateRows]="true"
+          [masterDetail]="false" [groupDefaultExpanded]="0" [cellFlashDelay]="cellFlashDelay" [pagination]="true"
+          [suppressRowClickSelection]="true" [cellFadeDelay]="cellFadeDelay" [rowGroupPanelShow]="false"
+          [sideBar]="false" [pivotPanelShow]="false" [getRowStyle]="getRowStyle" [getRowHeight]="getRowHeight"
+          [paginationPageSize]="paginationPageSize" [cacheOverflowSize]="cacheOverflowSize"
+          [maxConcurrentDataSourceRequests]="maxConcurrentDataSourceRequests" [infiniteInitialRowCount]="infiniteInitialRowCount">
+        </ag-grid-angular>
+
+      </div>
+    </div>
+  </div>
+
+</div>

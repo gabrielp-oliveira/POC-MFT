@@ -1,0 +1,93 @@
+:root {
+  --borderColor: #ced4da;
+}
+.storeReportsDatePicker .p-button {
+  color: #e68835 !important;
+  background: #ffffff !important;
+  border: 1px solid var(--borderColor)!important;
+  border-left: none!important;
+  border-radius: 8px;
+  margin-right: 2px;
+
+}
+
+.storeReportsDatePicker .p-calendar-w-btn .p-inputtext {
+  border-right: none!important;
+  border-bottom-left-radius: 8px !important;
+  border-top-left-radius: 8px !important;
+  cursor: pointer;
+}
+
+.storeReportsDatePicker .p-calendar {
+  height: 30px !important;
+  width: 100% !important;
+}
+
+.storeReportsDatePicker .p-button.p-button-icon-only {
+  width: 2.157rem;
+  padding: 0.5rem 0;
+}
+
+.storeReportsDatePicker .p-calendar-w-btn .p-inputtext:focus {
+  border: 1px solid var(--borderColor) !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.storeReportsDatePicker .p-inputtext:enabled:hover {
+  border-color: var(--borderColor);
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.storeReportsDatePicker .p-datepicker {
+  padding: 0.2rem !important;
+  border: 0.5px solid #e68835 !important;
+  border-radius: 10px !important;
+}
+
+.storeReportsDatePicker .p-datepicker .p-component .p-datepicker-touch-ui {
+  min-width: 30% !important;
+  height: 65% !important;
+  left: 20% !important;
+}
+
+.storeReportsDatePicker .p-datepicker table td>span {
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+}
+
+.storeReportsDatePicker .p-datepicker table td {
+  padding: 0.3rem !important;
+}
+
+.storeReportsDatePicker .p-calendar .p-datepicker-touch-ui,
+.p-datepicker-touch-ui {
+  // left: 15% !important;
+  // min-width: 25vw !important;
+  // position: fixed !important;
+  // top: 50% !important;
+  left: 10% !important;
+  min-width: 18vw !important;
+  position: fixed !important;
+  top: 58% !important;
+}
+
+.storeReportsDatePicker .p-datepicker .p-datepicker-header {
+  padding: 0.3rem !important;
+  color: #495057;
+}
+
+.storeReportsDatePicker .p-inputtext {
+  font-family: Roboto;
+  font-size: 12px !important;
+  color: #000 !important;
+  background: #ffffff !important;
+  padding: 0.5rem 0.5rem !important;
+  border: 1px solid var(--borderColor) !important;
+}
+
+.storeReportsDatePicker .p-datepicker table td > span.p-highlight {
+  color: #fff !important;
+  background: #e68835 !important;
+}

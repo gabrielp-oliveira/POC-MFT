@@ -1,0 +1,145 @@
+// File Name: Colors.scss   
+// Author : Anudeep Thummalapalli        
+// Date : 23-06-2020                    
+// Version : 1.0     
+
+.border-lightGrey {
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+}
+
+.primary {
+    color: #50d0ff;
+}
+
+.success {
+    color: rgba(0, 195, 101, 0.9);
+}
+
+.danger {
+    color: #C93639;
+}
+
+.warning {
+    color: #f39c12;
+}
+
+.light {
+    color: #cccccc;
+}
+
+.GridHeaderTextColor {
+    color:rgba(0, 0, 0, 0.54);
+}
+
+.blue {
+    color: #199ad6;
+}
+
+.grey {
+    color: #999999;
+}
+
+.text-muted {
+    color: rgba(0,0,0,.54)!important;
+}
+
+.white {
+    color: #ffffff;
+}
+.bg-whte {
+    background-color: #fff;;
+}
+.lightGrey {
+    color: #cccccc;
+    // background-color: #cccccc;
+}
+.divHeader {
+    color: #000;
+    background-color: #ffffff;
+}
+.leftMenucolor {
+    color: #7792e3 !important;
+}
+.cpBlue {
+    color: #1A6796
+} 
+.headerRowColor {
+    background-color: #34becd !important;  
+    color: #fff !important; 
+}
+// .headerColor {
+//     background-color: #e0e0e0;  
+// }
+.basic {
+    color: #fff;
+}
+.cp-danger {
+    color: #ca3639;
+}
+
+.cp-success {
+    color: #39ad72;
+}
+
+.cp-primary {
+    color: #1a6796;
+}
+
+.cp-info {
+    color: #34becd;
+}
+
+.cp-warning {
+    color: #dc8729;
+}
+
+.cp-default {
+    color: #e0e0e0;
+}
+
+.cp-white {
+    color: #ffffff;
+}
+
+.cp-black {
+    color: #333333;
+}
+.cp-red {
+    color: #C93639;
+}
+.cp-icon {
+    color :#d92337
+}
+
+.cp-bg-danger, .cp-bg-red {
+    background-color: #ca3639;
+}
+
+.cp-bg-success {
+    background-color: #39ad72;
+}
+
+.cp-bg-primary {
+    background-color: #1a6796;
+}
+
+.cp-bg-info {
+    background-color: #34becd;
+}
+
+.cp-bg-warning {
+    background-color: #dc8729;
+}
+
+.cp-bg-default {
+    background-color: #e0e0e0;
+}
+
+.gridHeader-bg {
+    background-color: #e9e9e9;
+}
+
+.white {
+    color:#fff;
+}

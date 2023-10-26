@@ -1,0 +1,494 @@
+.custom-wrap {
+    margin-top: 12px;
+}
+
+.custom-checkbox,
+.custom-radio {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+
+.custom-checkbox:active+label::before,
+.custom-radio:active+label::before {
+    -webkit-transition-duration: 0;
+    transition-duration: 0;
+}
+
+.custom-checkbox+label,
+.custom-radio+label {
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    display: block;
+    padding-left: 32px;
+    color: $gray-800;
+    cursor: pointer;
+
+    &:hover {
+        color: $color;
+    }
+}
+
+.custom-checkbox+label::before,
+.custom-radio+label::before {
+    background-color: white;
+    border: 1px solid $border;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    content: '';
+    color: $color;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+.custom-checkbox+label::after,
+.custom-radio+label::after {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    content: '';
+    background-color: #444;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    transform: scale(0);
+    transform-origin: 50%;
+    transition: -webkit-transform 200ms ease-out;
+    transition: transform 200ms ease-out;
+    transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+
+.custom-checkbox[disabled]+label::before,
+.custom-radio[disabled]+label::before {
+    animation: none;
+    box-shadow: none;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.custom-checkbox[disabled]:active+label::before,
+.custom-checkbox[disabled]:focus+label::before,
+.custom-checkbox[disabled]:hover+label::before,
+.custom-radio[disabled]:active+label::before,
+.custom-radio[disabled]:focus+label::before,
+.custom-radio[disabled]:hover+label::before {
+    border-color: rgba(128, 128, 128, 0.5);
+    -webkit-filter: none;
+    filter: none;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.custom-checkbox+label::before,
+.custom-checkbox+label::after {
+    border-radius: 2px;
+}
+
+.custom-checkbox+label::after {
+    background-color: transparent;
+    top: 6px;
+    left: 4.5px;
+    width: 8px;
+    height: 2.8px;
+    border-style: solid;
+    border-color: $gray-800;
+    border-width: 0 0 3px 3px;
+    border-radius: 0;
+    border-image: none;
+    transform: rotate(-45deg) scale(0);
+    transition: none;
+}
+
+.custom-checkbox:checked+label::after {
+    content: '';
+    transform: rotate(-45deg) scale(1);
+    transition: -webkit-transform 200ms ease-out;
+    transition: transform 200ms ease-out;
+    transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+
+.custom-radio+label::before,
+.custom-radio+label::after {
+    border-radius: 50%;
+}
+
+.custom-radio:checked:active+label::before,
+.custom-radio:checked:focus+label::before {
+    animation: none;
+    filter: none;
+    transition: none;
+}
+
+.custom-radio:checked+label::before {
+    -webkit-animation: none;
+    animation: none;
+    background-color: #fff;
+}
+
+.custom-radio:checked+label::after {
+    transform: scale(1);
+}
+
+select.custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%228%22%20viewBox%3D%220%200%2016%208%22%3E%3Cpolygon%20fill%3D%22%234D4D4D%22%20points%3D%228%2C0%2016%2C0%2012%2C4%208%2C8%204%2C4%200%2C0%20%22/%3E%3C/svg%3E);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    border: 1px solid grey;
+    border-radius: 0;
+    padding: 0.25em 0.4em;
+    padding-right: 1.5em;
+}
+
+select.custom-select:focus,
+select.custom-select:hover {
+    border-color: black;
+    outline: none;
+}
+
+select.custom-select:active {
+    border-color: #900;
+}
+
+select.custom-select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+/* IE 10/11+ - This hides native dropdown button arrow so it will have the custom appearance, IE 9 and earlier get a native select - targeting media query hack via http://browserhacks.com/#hack-28f493d247a12ab654f6c3637f6978d5 - looking for better ways to achieve this targeting */
+/* The second rule removes the odd blue bg color behind the text in the select button in IE 10/11 and sets the text color to match the focus style's - fix via http://stackoverflow.com/questions/17553300/change-ie-background-color-on-unopened-focused-select-box */
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    select.custom-select::-ms-expand {
+        display: none;
+    }
+
+    select.custom-select:focus::-ms-value {
+        background: transparent;
+        color: grey;
+    }
+}
+
+
+
+
+/*======================================
+  Selectric v1.13.0
+======================================*/
+
+.selectric-wrapper {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.selectric-responsive {
+    width: 100%;
+}
+
+.selectric {
+    border: 1px solid $border;
+    position: relative;
+    overflow: hidden;
+    max-width: 600px;
+    background: #FFFFFF;
+    border: 1px solid $border;
+    border-radius: 8px;
+
+    .label {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 40px;
+        margin: 0 42px 0 0;
+        font-size: 16px;
+        line-height: 1.2;
+        padding-left: 12px;
+        color: black;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-family: $font;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 100%;
+        background-color: white;
+        border: none;
+        font-size: 16px;
+        color: $gray-800;
+        padding: 0;
+    }
+}
+
+
+.selectric-hover .selectric .button {
+    color: $color;
+}
+
+.selectric-hover .selectric .button:after {
+}
+
+.selectric-open {
+    z-index: 9999;
+}
+
+
+
+.selectric-open {
+    .selectric-items {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        visibility: visible; /* shows sub-menu */
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(0%);
+        transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */        
+    }
+
+    .selectric {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-color: transparent;
+    }
+}
+
+.selectric-disabled {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.selectric-hide-select {
+    position: relative;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+
+.selectric-hide-select select {
+    position: absolute;
+    left: -100%;
+}
+
+.selectric-hide-select.selectric-is-native {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.selectric-hide-select.selectric-is-native select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    z-index: 1;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.selectric-input {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+    height: 1px !important;
+    outline: none !important;
+    border: none !important;
+    *font: 0/0 a !important;
+    background: none !important;
+}
+
+.selectric-temp-show {
+    position: absolute !important;
+    visibility: hidden !important;
+    display: block !important;
+}
+
+/* Items box */
+.selectric-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    border-top-color: transparent;
+
+    visibility: hidden; /* hides sub-menu */
+    opacity: 0;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.selectric-items .selectric-scroll {
+    height: 100%;
+    overflow: auto;
+    border-radius: 0;
+}
+
+.selectric-above .selectric-items {
+    top: auto;
+    bottom: 100%;
+}
+
+.selectric-items ul,
+.selectric-items li {
+    list-style: none;
+    padding: 0 12px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.selectric-items li {
+    display: block;
+    padding: 4px 0;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    border-top: 1px solid $border;
+
+    span {
+        width: calc( 100% + 16px);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 34px;
+        line-height: 1.2;
+        transition: all 0.33s;
+        border-radius: 4px;
+        position: relative;
+        margin-left: -8px;
+        margin-right: -8px;
+        padding: 0 12px;
+    }
+}
+
+.selectric-items li.selected {
+    color: black;
+
+    span {
+        &::after {
+            @extend .font-icon;
+            content: "\e90a";
+            position: absolute;
+            top: 10px;
+            right: 12px;
+            display: block;
+            font-size: 14px;
+            transition: all 0.3s;
+            color: $color;
+        }
+    }
+}
+
+.selectric-items li.highlighted {
+    color: black;
+
+    span {
+        background: $hover;
+    }
+}
+
+.selectric-items li:hover {
+    color: black;
+
+    span {
+        background: $hover;
+    }
+}
+
+.selectric-items .disabled {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    cursor: default !important;
+    background: none !important;
+    color: #666 !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.selectric-items .selectric-group .selectric-group-label {
+    font-weight: bold;
+    padding-left: 10px;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: none;
+    color: #444;
+}
+
+.selectric-items .selectric-group.disabled li {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.selectric-items .selectric-group li {
+    padding-left: 25px;
+}
+
+
+.selectric-custom-select--large {
+
+    .selectric {
+        max-width: 100%;
+    }
+
+    .selectric .label {
+        font-size: 14px;
+    }
+}

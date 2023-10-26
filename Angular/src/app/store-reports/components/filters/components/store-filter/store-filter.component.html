@@ -1,0 +1,24 @@
+<div class="col-sm-12 p-0 pt-2 mt-2 pr-2">
+
+  <p class="storeReports_FilterCaption mb-0 pl-1">Stores</p>
+
+  <!-- [disabled]="this.isInvalid" -->
+  <p-multiSelect [options]="this.dataSource" [(ngModel)]="selectedItems" (onChange)="applyFilters($event)"
+    defaultLabel="Select Stores" optionLabel="formattedText" class="multiselect-custom" [virtualScroll]="true"
+    [itemSize]="30">
+
+    <ng-template let-value pTemplate="selectedItems">
+
+      <div *ngIf="!selectedItems || selectedItems.length === 0" class="storeReports_multiSelectPlaceHolder">
+        Select Stores
+      </div>
+
+      <div *ngIf="!selectedItems || selectedItems.length > 0" class="storeReports_multiSelectSelectionLabel">
+        <div>{{selectionDisplayString}}</div>
+      </div>
+
+    </ng-template>
+
+  </p-multiSelect>
+
+</div>

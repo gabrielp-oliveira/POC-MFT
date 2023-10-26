@@ -1,0 +1,76 @@
+.storeReports_gridWrapper {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.ag-theme-balham .ag-row {
+  height: 35px !important;
+
+  &.ag-full-width-row {
+    height: 512px !important;
+  }
+}
+
+.ag-theme-balham .ag-row .ag-cell-data-changed {
+  background-color: #ffdddd !important;
+}
+
+.ag-theme-balham .ag-row.ag-row-last {
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid !important;
+  border-color: #f2f2f2 !important;
+}
+
+/* Hide right header and spacer */
+.ag-horizontal-right-spacer {
+  width: 0 !important;
+  min-width: 0 !important;
+}
+
+.color-error-yellow {
+  color: #e68835 !important;
+}
+
+
+
+.ag-theme-balham .ag-cell {
+  height: 35px !important;
+  line-height: 35px !important;
+  border: 1px solid transparent;
+  padding-left: 5px;
+  padding-right: 10px;
+  font-family: Poppins !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  color: #000 !important;
+}
+
+.ag-theme-balham .ag-header {
+  font-family: Roboto !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 11px !important;
+  line-height: 14px !important;
+  text-transform: uppercase;
+  color: #000 !important;
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+.storeOrders_paginationControls {
+  margin: 0px !important;
+  padding-left: 0px !important;
+
+  .ngx-pagination {
+    margin-bottom: 0 !important;
+  }
+
+  .ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #e68835;
+    color: #fefefe;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+}

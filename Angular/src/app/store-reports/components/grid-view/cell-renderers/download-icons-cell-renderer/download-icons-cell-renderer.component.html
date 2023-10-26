@@ -1,0 +1,16 @@
+<div class="container-flux h-100">
+  <div class="col p-0" style="width:64px">
+    <img *ngIf="pdfIcon" [src]="pdfIcon" (click)="onDownloadPDF()" title="Export as PDF" width="16px" height="16px"
+      class="pointer ml-1">
+    <img *ngIf="xlsIcon" [src]="xlsIcon" (click)="onDownloadXLS()" title="Export as Excel" width="16px" height="16px"
+      class="pointer ml-1">
+    <img *ngIf="csvIcon" [src]="csvIcon" (click)="onDownloadCSV()" title="Export as CSV" width="16px" height="16px"
+      class="pointer ml-1">
+    <img *ngIf="pipeIcon" [src]="pipeIcon" (click)="onDownloadPIPE()" title="Export as Pipe Delimited" width="16px" height="16px"
+      class="pointer ml-1">
+    <img *ngIf="txtIcon" [src]="txtIcon" (click)="onDownloadTXT()" title="Export as Text" width="16px" height="16px"
+      class="pointer ml-1">
+    <img *ngIf="zipIcon" [src]="zipIcon" (click)="onDownloadZIP()" title="Export as ZIP" width="16px" height="16px"
+      class="pointer ml-1">
+  </div>
+</div>

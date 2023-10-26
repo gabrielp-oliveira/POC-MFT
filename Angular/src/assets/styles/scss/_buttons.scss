@@ -1,0 +1,81 @@
+
+.button {
+    display: inline-flex;
+    vertical-align: middle;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid rgba(black, 0.2);
+    background: transparent;
+    padding: 2px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: black;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        color: $color;
+        border-color: $color;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.button--primary {
+    background-color: $color;
+    border-color: $color;
+    color: white !important;
+
+    &:hover,
+    &:focus {
+        color: $color;
+        background-color: $hover;
+        border-color: $hover;
+        text-decoration: none;
+    }
+}
+
+.button--white {
+    background-color: white;
+    border-color: white;
+    color: black;
+
+    &:hover,
+    &:focus {
+        color: rgba(black, 0.4);
+        background-color: white;
+        border-color: white;
+    }
+}
+
+.button--icon {
+    font-size: 24px;
+    width: 40px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 20px;
+}
+
+.button--fixed-tiny {
+    min-width: 114px;
+}
+
+.button--medium {
+    height: 44px;
+}

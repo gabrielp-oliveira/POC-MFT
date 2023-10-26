@@ -1,0 +1,92 @@
+
+
+    <button type="button" class="btn " style="background-color: #e68835; color: white;" data-toggle="modal" data-target="#uploadModal" (click)="openModal()">
+        Upload
+        <a #fileUpload style="display: none"></a>
+      </button>
+ 
+    <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="border-radius: 10px;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="uploadModalLabel">Upload New Document</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                
+                <div class="col-sm-12 p-0 pt-2 mt-2 pr-2">
+
+                    <span [className]="errorStatus.store? 'red': ''">Select a store to upload your document.</span> <br/>
+                    <p [className]="errorStatus.format ? 'red': ''">valid document formats: <strong> PDF, XLS, CSV, PSV,TXT, ZIP, PIPE, XLSX, PNG, LSX</strong>.</p>
+                    <span [className]="errorStatus.file? 'red display': 'none'">Select a file to upload.</span>
+
+                
+                    <select [ngModelOptions]="{standalone: true}" [(ngModel)]="selectedStore" class="form-control" required (change)="selectStore()">
+                    <option value="" selected="true">Choose Store</option>
+                      <option *ngFor="let store of this.dataSource" value="{{store.storeNbr}}" >
+                        {{ store.formattedText }}
+                    </select> 
+                    <hr>
+                    <form class="upload-files-container" enctype='multipart/form-data'>
+                        <div class="drag-file-area" (onFileDropped)="dragFile($event)" DropZone  >
+                            <span class="">   
+                                           
+                                <!-- <input type="file" multiple class="default-file-input" #fileUpload (change)="dragFile($event)"/> -->
+                                <mat-icon color="#e68835"  class="upload-icon">upload</mat-icon>
+                                
+                            </span>
+                            
+                            
+                            <h3 class="dynamic-message" > Drag & drop any file here </h3>
+                            <label class="label" >
+                                or
+                                <span class="">
+                                    <!-- <input type="file" multiple class="default-file-input"/> -->
+                                    <label  class="emphasis" for="uploadFile" >
+                                        <input type="file" name="uploadFile" multiple="multiple" id="uploadFile" (change)="uploadFiles($event)" #fileUploadText>browse file
+                
+                                    </label>
+                                    <span>from device</span> </span>
+                            </label>
+                        </div>
+
+                        <span class="cannot-upload-message"> <span class="">error</span> Please select a file first <span
+                                class=" cancel-alert-button">cancel</span> </span>
+                        <div class="file-block">
+                            <div class="file-info"> <span class="file-icon">description</span> <span class="file-name"> </span> | <span
+                                    class="file-size"> </span> </div>
+                            <span class=" remove-file-icon">delete</span>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="fileUploadedList">
+                
+                            <span *ngFor="let file of filesList; let i = index" [attr.data-index]="i" class="fileUploaded">
+                                <span 
+                                [tooltip]="file.name.length > 15 ? file.name : ''" 
+                                     placement="top" 
+                                     delay="500" [className]="file.isInvalid ? 'fileName red': 'fileName'"> 
+                                    {{file.name}}
+                                </span>
+                                <span (click)="deleteFile(i)" class="deletebutton">
+                                    X
+                                </span>
+                            </span>
+                        </div>
+                    </form>
+                
+                    <a #fileUpload style="display: none"></a>
+                 
+
+                  </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn" [disabled]="(!this.errorStatus.file && !this.errorStatus.format && !this.errorStatus.store) ? false : true " style="background-color: #e68835; color: white;" (click)="confirmFile()">Upload</button>
+            </div>
+          </div>
+        </div>
+      </div>

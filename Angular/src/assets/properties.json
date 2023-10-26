@@ -1,0 +1,50 @@
+{
+  "pageId": "SR01",
+  "gsPageId": "GSSR01",
+
+  "getCMSData": {
+    "serverHost": "${{SERVER_HOST_APIM}}",
+    "contextRoot": "/cp/cms/1.0",
+    "endPoint": "/content/getCMSData"
+  },
+  "getUserStores": {
+    "serverHost": "${{SERVER_HOST_APIM}}",
+    "contextRoot": "/cp/security/1.0",
+    "endPoint": "/store/getUserStores"
+  },
+  "getAllActiveStores": {
+    "serverHost": "${{SERVER_HOST_APIM}}",
+    "contextRoot": "/cp/security/1.0/",
+    "endPoint": "store/getStores"
+  },
+  "getCompanyCodes": {
+    "serverHost": "${{SERVER_HOST_APIM}}",
+    "contextRoot": "/cp/sharedModule/1.0",
+    "endPoint": "/getCompanyCode"
+  },
+  "checkSubRole": {
+    "serverHost": "${{SERVER_HOST_APIM}}",
+    "contextRoot": "/cp/security/1.0",
+    "endPoint": "/user/checkSubRole"
+  },
+  "getAssignedCompaniesByStore": {
+    "serverHost": "${{SERVER_HOST_APIM}}",
+    "contextRoot": "/cp/security/1.0",
+    "endPoint": "/user/getCompanyCodesByUser"
+  },
+  "getReportNames": {
+    "serverHost": "${{SERVER_HOST_APIM}}",
+    "contextRoot": "/cp/searchReport/1.0",
+    "endPoint": "/store/getReportNames"
+  },
+  "getReports": {
+    "serverHost": "${{SERVER_HOST_APIM}}",
+    "contextRoot": "/cp/searchReport/1.0",
+    "endPoint": "/store/search"
+  },
+  "downloadFile": {
+    "serverHost": "${{SERVER_HOST_APIM}}",
+    "contextRoot": "/cp/fin/doc/1.0",
+    "endPoint": "/gs/getFileByReportId"
+  }
+}
